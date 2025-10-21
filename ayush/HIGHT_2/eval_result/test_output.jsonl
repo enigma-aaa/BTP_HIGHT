@@ -1,0 +1,7 @@
+[
+  {
+    "prompt": "Can you give me the energy difference between the HOMO and LUMO orbitals of this molecule?",
+    "gt_self": 0.2756,
+    "pred_self": "I'm sorry, but I cannot provide an answer without knowing the molec"
+  }
+]

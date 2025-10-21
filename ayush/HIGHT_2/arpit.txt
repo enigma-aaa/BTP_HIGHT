@@ -1,0 +1,11 @@
+MODEL_VERSION 
+
+lmsys/vicuna-7b-v1.5 
+lmsys/vicuna-13b-v1.5
+meta-llama/Llama-2-7b-chat-hf 
+meta-llama/Llama-2-13b-chat-hf
+mistralai/Mistral-7B-Instruct-v0.2
+HuggingFaceH4/zephyr-7b-beta
+meta-llama/Meta-Llama-3-8B-Instruct
+google/gemma-7b-it
+meta-llama/Llama-2-70b-chat-hf mistralai/Mixtral-8x7B-Instruct-v0.1

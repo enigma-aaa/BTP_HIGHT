@@ -1,0 +1,11 @@
+[
+  {
+    "instruction": "Can you give me the energy difference between the HOMO and LUMO orbitals of this molecule?",
+    "input": "[O][=C][O][C][C][C][C][Ring1][=Branch1][C][Ring1][Ring2]",
+    "output": 0.2756,
+    "metadata": {
+      "task": "property prediction",
+      "split": "test"
+    }
+  }
+]

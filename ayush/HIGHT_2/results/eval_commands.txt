@@ -1,0 +1,24 @@
+***
+python -m llava.eval.molecule_metrics.generate_sample \
+    --task property_pred \
+    --model-path /mnt/data1/gtoken/ayush/HIGHT_2/checkpoints/Graph-LLaVA-4C-hvqvae2-5ep-hlinear-fgprompt-neg-extend/graph-text-molgen/property_pred-llava-hvqvae2-lmsys/vicuna-7b-v1.3-finetune_lora-5ep \
+    --in-file /mnt/data1/gtoken/ayush/HIGHT_2/data/Molecule-oriented_Instructions/property_prediction-test.json \
+    --answers-file /mnt/data1/gtoken/ayush/HIGHT_2/eval_result/hvqvae2-property_pred-5ep.jsonl \
+    --graph-checkpoint-path /mnt/data1/gtoken/ayush/HIGHT_2/checkpoints/hvqvae.pth \
+    --model-base lmsys/vicuna-7b-v1.3 \
+    --batch_size 1 --temperature 0.2 --top_p 1.0 \
+    --debug \
+    --motif_augmented
+
+conda run -n env_hight_ayush python -m llava.eval.molecule_metrics.property_metrics --eval_result_file /mnt/data1/gtoken/ayush/HIGHT_2/eval_result/hvqvae2-property_pred-5ep.jsonl
+
+***
+
+
+python -m llava.eval.molecule_metrics.MoleculeNet_classification --dataset bace --batch_size 1 --debug
+
+python -m llava.eval.molecule_metrics.MoleculeNet_classification --dataset bbbp --batch_size 1 --debug
+
+python -m llava.eval.molecule_metrics.MoleculeNet_classification --dataset hiv --batch_size 1 --debug
+
+
